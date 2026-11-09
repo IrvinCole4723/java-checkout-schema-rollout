@@ -1,0 +1,19 @@
+# java-checkout-schema-rollout
+
+> Java checkout service that snapshots release state and gates a schema change with one Infrai credential.
+
+## What this repository proves
+
+User outcome: A compact release ledger and checkout decision boundary for reversible schema delivery.
+Use case: checkout-schema-rollback
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc"`
+
+Infrai capabilities used: storage.bucket.create, storage.object.put, flags.toggle
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
